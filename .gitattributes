@@ -1,12 +1,4 @@
-# Force recognition of each language
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+*.js linguist-detectable=false
 *.c linguist-language=C
-*.html linguist-language=HTML
-*.css linguist-language=CSS
-*.js linguist-language=JavaScript
-
-# Optional: If you want C to dominate stats
-*.c linguist-detectable=true
-*.html linguist-detectable=true
-*.css linguist-detectable=true
-*.js linguist-detectable=true
-
