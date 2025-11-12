@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Allocation Planner - XYZ IT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn active">Tools <span class="arrow">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Subnet Calculator</a>
+                        <a href="ipam.html">IP Allocation Planner</a>
+                    </div>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="images/logo.png" alt="Institute Logo" class="logo">
+                <div class="header-text">
+                    <h1>XYZ Institute of Technology</h1>
+                    <h2>Network Engineering Department</h2>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h3>Subnet Host Allocation Planner</h3>
+            <p class="tool-description">Use this tool to manage and track host assignments within a single subnet. First, define the subnet, then allocate blocks of hosts to different departments.</p>
+            <form id="ipam-form">
+                <div class="input-group">
+                    <label for="subnet-to-manage">Subnet to Manage:</label>
+                    <input type="text" id="subnet-to-manage" value="192.168.1.0/24" required>
+                </div>
+                <div class="input-group">
+                    <label for="dept-name">Department:</label>
+                    <input type="text" id="dept-name" placeholder="e.g., CSE Department" required>
+                    <label for="hosts-to-allocate">Hosts to Allocate:</label>
+                    <input type="number" id="hosts-to-allocate" placeholder="e.g., 120" required>
+                </div>
+                <button type="submit">Allocate Hosts</button>
+            </form>
+            <div id="ipam-results">
+                <div class="allocation-summary">
+                    <h4>Allocation Status</h4>
+                    <p>Total Usable Hosts: <strong id="total-hosts">0</strong></p>
+                    <p>Hosts Allocated: <strong id="allocated-hosts">0</strong></p>
+                    <p>Remaining Available: <strong id="remaining-hosts">0</strong></p>
+                </div>
+                <h4>Department Allocations</h4>
+                <ul id="allocation-list"></ul>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 XYZ Institute of Technology. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="ipam.js"></script>
+</body>
+</html>

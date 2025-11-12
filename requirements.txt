@@ -1,0 +1,15 @@
+# System Requirements
+C Compiler (e.g., GCC or MSVC)
+Web Browser (latest version of Chrome, Firefox, or Edge)
+Local or Remote Web Server with CGI support (e.g., Apache, XAMPP)
+
+# Languages and Tools Used
+C (Backend logic via CGI)
+HTML5
+CSS3
+JavaScript (ES6)
+Winsock2 (for Windows C compilation)
+
+# Optional Tools for Development
+VS Code or PyCharm (for editing)
+XAMPP / WAMP / Apache HTTP Server (for testing CGI)
